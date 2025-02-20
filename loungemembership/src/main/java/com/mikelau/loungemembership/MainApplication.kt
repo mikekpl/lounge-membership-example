@@ -6,7 +6,7 @@ import com.mikelau.loungemembership.network.networkModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.GlobalContext.startKoin
 
-class MainApplication : Application() {
+open class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 

@@ -1,8 +1,8 @@
-package com.mikelau.loungemembership
+package com.mikelau.loungemembershipexample
 
 import android.app.Application
-import com.mikelau.loungemembership.network.appModule
-import com.mikelau.loungemembership.network.networkModule
+import com.mikelau.loungemembership.network.loungeMembershipAppModule
+import com.mikelau.loungemembership.network.loungeMembershipNetworkModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.GlobalContext.startKoin
 
@@ -14,8 +14,8 @@ open class MainApplication : Application() {
             androidContext(applicationContext)
             modules(
                 listOf(
-                    appModule,
-                    networkModule
+                    loungeMembershipAppModule,
+                    loungeMembershipNetworkModule
                 )
             )
         }

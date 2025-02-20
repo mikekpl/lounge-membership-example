@@ -45,7 +45,7 @@ fun provideService(retrofit: Retrofit): ApiService =
     retrofit.create(ApiService::class.java)
 
 
-val networkModule = module {
+val loungeMembershipNetworkModule = module {
     single { provideHttpClient() }
     single { provideConverterFactory() }
     single { provideRetrofit(get(), get()) }

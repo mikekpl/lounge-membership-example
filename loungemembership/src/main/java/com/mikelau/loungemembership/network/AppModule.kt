@@ -5,7 +5,7 @@ import com.mikelau.loungemembership.viewmodels.ProfileViewModel
 import org.koin.core.module.dsl.viewModel
 import org.koin.dsl.module
 
-val appModule = module {
+val loungeMembershipAppModule = module {
 
     factory {
         ProfileRepository(

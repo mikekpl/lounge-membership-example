@@ -41,6 +41,10 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Hello $name!",
         modifier = modifier.clickable {
             val intent = Intent(context, MileagePlanCardActivity::class.java)
+            intent.putExtras(Bundle().apply {
+                putString("token", "token")
+                putString("userId", "userId")
+            })
             context.startActivity(intent)
         }
     )

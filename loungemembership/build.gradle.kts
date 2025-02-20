@@ -75,7 +75,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.mikekpl"
                 artifactId = "loungemembership"
-                version = "0.0.2"
+                version = "0.0.3"
             }
         }
     }
